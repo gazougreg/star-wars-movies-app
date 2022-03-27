@@ -8,6 +8,8 @@ import MoviePreview from '../../containers/MoviePreview';
 
 const AppWrapper = styled.div`
     background: #ffff;
+    max-width: 100%;
+    overflow-x: hidden;
 `;
 
 const Header = styled.div`
