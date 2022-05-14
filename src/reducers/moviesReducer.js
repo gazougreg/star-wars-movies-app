@@ -3,7 +3,7 @@ import { REQUEST_MOVIES, RECEIVE_MOVIES, SET_MOVIE_ID } from '../constants/actio
 const initialState = {
     listOfMovies: [],
     selectedMovieId: 0,
-    isLoading: false,
+    // isLoading: false,
 };
 
 const moviesReducer = (state = initialState, { type = '', movies = [], id = 0 }) => {
@@ -11,13 +11,13 @@ const moviesReducer = (state = initialState, { type = '', movies = [], id = 0 })
         case REQUEST_MOVIES:
             return {
                 ...state,
-                isLoading: true,
+                // isLoading: true,
             };
         case RECEIVE_MOVIES:
             return {
                 ...state,
                 listOfMovies: movies,
-                isLoading: false,
+                // isLoading: false,
             };
         case SET_MOVIE_ID:
             return {

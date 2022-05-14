@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import MoviePreview from '../components/MoviePreview';
+import MoviePreview from '../components/MoviePreview/MoviePreview';
 
 const mapStateToProps = (state) => {
     return {

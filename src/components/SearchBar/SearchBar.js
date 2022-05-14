@@ -6,7 +6,6 @@ import styled from 'styled-components'
 import { FILTER_BY_INPUT } from '../../constants/filters';
 
 const SearchContainer = styled.div`
-    font-family: Arial, sans-serif;
     display:flex;
     align-items: center;
     background: #ffff;

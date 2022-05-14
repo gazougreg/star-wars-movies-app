@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchMoviesIfNeeded } from '../actions';
-import App from '../components/App';
+import { fetchMovies } from '../actions';
+import App from '../components/App/App';
 
-export default connect(null, { fetchMoviesIfNeeded })(App);
+export default connect(null, { fetchMovies })(App);

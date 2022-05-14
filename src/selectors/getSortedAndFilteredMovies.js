@@ -6,7 +6,7 @@ import { NO_SORT, SORT_BY_EPISODE, SORT_BY_YEAR } from '../constants/sorts';
 const filteredMovies = (state) => getFilteredMovies(state);
 const getSort = (state) => state.sort;
 
-export const getSortedMovies = createSelector(
+export const getSortedAndFilteredMovies = createSelector(
     [getSort, filteredMovies],
     (sort = NO_SORT, movies = []) => {
         switch(sort) {

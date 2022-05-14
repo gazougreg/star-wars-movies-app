@@ -1,5 +1,5 @@
 export const getFormattedList = ({ moviesData } = {}) => {
-    return  moviesData.map( ({title, episode_id, opening_crawl, director, release_date }) => {
+    return  moviesData.map( ({ title, episode_id, opening_crawl, director, release_date }) => {
              return {
                 id: episode_id,
                 title: title,
@@ -7,8 +7,7 @@ export const getFormattedList = ({ moviesData } = {}) => {
                 description: opening_crawl,
                 director: director,
                 releaseDate: release_date,
-
-            }
+            };
     });
 };
 
