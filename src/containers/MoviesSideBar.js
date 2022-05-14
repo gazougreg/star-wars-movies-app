@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
-import { getSortedMovies } from '../selectors/getSortedMovies';
+import { getSortedAndFilteredMovies } from '../selectors/getSortedAndFilteredMovies';
 import { setSelectedMovie } from '../actions';
-import MoviesSideBar from '../components/MoviesSideBar';
+import MoviesSideBar from '../components/MoviesSideBar/MovieSideBar';
 
 const mapStateToProps = (state) => {
     return {
-        sortedList: getSortedMovies(state),
+        sortedList: getSortedAndFilteredMovies(state),
     };
 };
 

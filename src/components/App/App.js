@@ -7,6 +7,8 @@ import MoviesSideBar from '../../containers/MoviesSideBar';
 import MoviePreview from '../../containers/MoviePreview';
 
 const AppWrapper = styled.div`
+    font-family: Arial, sans-serif;
+    color: #2f2f2f;
     background: #ffff;
     max-width: 100%;
     overflow-x: hidden;
@@ -36,10 +38,10 @@ const Content = styled.div`
     }
 `;
 
-const App = ({ fetchMoviesIfNeeded }) => {
+const App = ({ fetchMovies }) => {
 
     useEffect(() => {
-        fetchMoviesIfNeeded();
+        fetchMovies();
     }, []);
 
 
@@ -58,7 +60,7 @@ const App = ({ fetchMoviesIfNeeded }) => {
 };
 
 App.propTypes = {
-    fetchMoviesIfNeeded: PropTypes.func.isRequired,
+    fetchMovies: PropTypes.func.isRequired,
 };
 
 export default App;

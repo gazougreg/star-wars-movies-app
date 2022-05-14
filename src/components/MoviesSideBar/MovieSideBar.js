@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Movie from '../Movie';
+import Movie from '../Movie/Movie';
 
 const StyledList = styled.ul`
-    font-family: Arial, san-serif;
     list-style: none;
     padding: 20px;
     border-right: 1px solid #cdcdcd;
@@ -18,16 +17,14 @@ const StyledList = styled.ul`
 `;
 
 const MoviesSideBar = ({ sortedList, setSelectedMovie}) => {
-    const handleMovieSelection = (movieId) => {
-        setSelectedMovie(movieId);
-    };
+
     return(
         <StyledList>
             {sortedList.map((movie) => (
                 <Movie
                     key={movie.id}
                     movie={movie}
-                    selectMovie={() => handleMovieSelection(movie.id)}
+                    selectMovie={() => setSelectedMovie(movie.id)}
                 />
             ))}
         </StyledList>

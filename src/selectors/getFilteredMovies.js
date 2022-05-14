@@ -6,7 +6,7 @@ const getMovies = (state) => (state.movies ? state.movies.listOfMovies : []);
 
 export const getFilteredMovies = createSelector(
     [getFilter, getMovies],
-    ({type = NO_FILTER, input = ''}, movies) => {
+    ({ type = NO_FILTER, input = '' }, movies) => {
         switch(type) {
            case NO_FILTER:
                return movies;

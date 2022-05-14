@@ -3,25 +3,22 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components'
 
 const Container = styled.div`
-    font-family: Arial, sans-serif;
-    color: #2f2f2f;
     padding: 40px;
 `;
 
 const Title = styled.h2`
-   font-size: 1.2em;
+   font-size: 1.2rem;
 `;
 
 const StyledParagraph = styled.p`
-    font-size: 0.9em;
+    font-size: 0.9rem;
 `;
 
 const StyledDiv = styled.div`
-    font-size: 0.8em;
+    font-size: 0.8rem;
 `;
 
 const Message = styled.h3`
-    font-family: Arial, sans-serif;
     color: #2f2f2f;
     padding-left: 100px;
 `;
